@@ -1,5 +1,5 @@
 # Here is how you install (copy this line in a terminal on the pi):
-git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/Retropie/roms/ports/wireless
+git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/RetroPie/roms/ports/wireless
 
 # And then you're all done.
 #

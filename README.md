@@ -8,6 +8,6 @@ These scripts should be targeted specifically for the Raspberry Pi. Personally, 
 The scripts definitely won't disable wired connection. These scripts only disable wireless communications.
 
 # Instructions
-Copy this whole folder to ~/Retropie/roms/ports to have a quick an easy method to turn off/on wireless without interfering with your list of ports games.
+Copy this whole folder to ~/RetroPie/roms/ports to have a quick an easy method to turn off/on wireless without interfering with your list of ports games.
 
-For easy installation instructions, look at the file INSTRUCTIONS in this directory.
+For easy installation instructions, look at the file INSTALLATION in this directory.
