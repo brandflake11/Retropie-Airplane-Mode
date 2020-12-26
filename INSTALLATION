@@ -1,6 +1,11 @@
-# Here is how you install (copy this line in a terminal on the pi):
+# Here is how you install (copy the following line in a terminal on the pi):
 git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/RetroPie/roms/ports/wireless
 
 # And then you're all done.
 #
-# When you're ready to update, run this line (in a terminal on the pi, of course):
+# When you're ready to update, run the following line (in a terminal on the pi, of course):
+git -C ~/RetroPie/roms/ports/wireless pull
+
+# The above line runs a 'git pull' in the folder specified above. You can run it in any directory and still update the wireless directory, unlike 'git pull'. 
+#
+# And you should then get the latest changes, assuming you didn't make any changes to the scripts. 
