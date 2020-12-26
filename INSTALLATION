@@ -1,0 +1,6 @@
+# Here is how you install (copy this line in a terminal on the pi):
+git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/Retropie/roms/ports/wireless
+
+# And then you're all done.
+#
+# When you're ready to update, run this line (in a terminal on the pi, of course):
