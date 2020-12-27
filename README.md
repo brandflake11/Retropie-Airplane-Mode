@@ -10,7 +10,7 @@ The scripts definitely won't disable wired connection. These scripts only disabl
 # Instructions
 Copy this whole folder to ~/RetroPie/retropiemenu/wireless to have a quick and easy method to turn off/on wireless without interfering with your game list. 
 
-This install location has changed, as originally the instructions copied the scripts to ~/RetroPie/roms/ports/wireless. The new location allows the scripts to show under the Retropie Settings menu in EmulationStation, which is a much better place for these scripts to live (thanks to the help of mitu on the RetroPie forums). Look at the INSTALL file for instructions to migrate your scripts to the new location.
+The install location has changed as of December 27, 2020. Originally the instructions copied the scripts to ~/RetroPie/roms/ports/wireless. The new location allows the scripts to show under the Retropie Settings menu in EmulationStation, which is a much better place for these scripts to live (thanks to the help of mitu on the RetroPie forums for the suggestion). Look at the last part of the INSTALL file for instructions to migrate your scripts to the new location.
 
 For easy installation instructions, look at the file INSTALL (https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALL) in this directory.
 
