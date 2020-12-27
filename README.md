@@ -12,6 +12,9 @@ Copy this whole folder to ~/RetroPie/retropiemenu/wireless to have a quick and e
 
 The install location has changed as of December 27, 2020. Originally the instructions copied the scripts to ~/RetroPie/roms/ports/wireless. The new location allows the scripts to show under the Retropie Settings menu in EmulationStation, which is a much better place for these scripts to live (thanks to the help of mitu on the RetroPie forums for the suggestion). Look at the last part of the INSTALL file for instructions to migrate your scripts to the new location.
 
+There is now a custom icon for the EmulationStation menu for the wireless folder. The INSTALL instructions now include how to install it. If you have previously installed the scripts without it, update the scripts, and run this in a terminal:
+`~/RetroPie/retropiemenu/wireless/.install-to-games-list.sh.`
+
 For easy installation instructions, look at the file INSTALL (https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALL) in this directory.
 
 # The included scripts:
