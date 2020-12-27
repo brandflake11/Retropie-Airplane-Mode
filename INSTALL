@@ -1,4 +1,4 @@
-# If you don't know how to get to a terminal on Retropie, you can plug in a keyboard and press 'F4' when you get to the game select screen (this menu is called emulationstation).
+# If you don't know how to get to a terminal on Retropie, you can plug in a keyboard and press 'F4' when you get to the game select screen (this menu is called EmulationStation).
 # From there, you can type the line in. If you want to copy and paste, I recommend setting up ssh. Read about that here: 'https://retropie.org.uk/docs/SSH/'
 
 # Here is how you install (copy the following line in a terminal on the pi):
@@ -18,3 +18,5 @@ mv ~/RetroPie/roms/ports/wireless ~/RetroPie/retropiemenu/wireless && git -C ~/R
 
 # The above line will move the wireless folder and update it for you.
 # If you aren't sure what this last point is talking about and you haven't installed these scripts yet, don't worry about this last line.
+#
+# Remember to restart EmulationStation to see changes take effect. 
