@@ -15,6 +15,9 @@ The install location has changed as of December 27, 2020. Originally the instruc
 There is now a custom icon for the EmulationStation menu for the wireless folder. The INSTALL instructions now include how to install it. If you have previously installed the scripts without it, update the scripts, and run this in a terminal:
 `~/RetroPie/retropiemenu/wireless/.install-to-games-list.sh.`
 
+![Image of the Wireless folder this script adds in RetroPie's EmulationStation Menu](https://raw.githubusercontent.com/brandflake11/Retropie-Airplane-Mode/main/wireless-icon.png)
+
+
 For easy installation instructions, look at the file INSTALL (https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALL) in this directory.
 
 # The included scripts:
