@@ -10,7 +10,7 @@ The scripts definitely won't disable wired connection. These scripts only disabl
 # Instructions
 Copy this whole folder to ~/RetroPie/roms/ports/wireless to have a quick and easy method to turn off/on wireless without interfering with your list of ports games.
 
-For easy installation instructions, look at the file INSTALLATION ('https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALLATION') in this directory.
+For easy installation instructions, look at the file INSTALL ('https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALLATION') in this directory.
 
 # The included scripts:
 'disable-airplane-mode.sh' - Turns on both bluetooth and wifi
