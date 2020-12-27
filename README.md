@@ -8,19 +8,22 @@ These scripts should be targeted specifically for the Raspberry Pi. Personally, 
 The scripts definitely won't disable wired connection. These scripts only disable wireless communications.
 
 # Instructions
-Copy this whole folder to ~/RetroPie/roms/ports/wireless to have a quick and easy method to turn off/on wireless without interfering with your list of ports games.
+Copy this whole folder to ~/RetroPie/retropiemenu/wireless to have a quick and easy method to turn off/on wireless without interfering with your game list. 
 
-For easy installation instructions, look at the file INSTALL ('https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALLATION') in this directory.
+This install location has changed, as originally the instructions copied the scripts to ~/RetroPie/roms/ports/wireless. The new location allows the scripts to show under the Retropie Settings menu in EmulationStation, which is a much better place for these scripts to live (thanks to the help of mitu on the RetroPie forums). Look at the INSTALL file for instructions to migrate your scripts to the new location.
+
+For easy installation instructions, look at the file INSTALL (https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/INSTALL) in this directory.
 
 # The included scripts:
-'disable-airplane-mode.sh' - Turns on both bluetooth and wifi
-'enable-airplane-mode.sh'  - Turns off both bluetooth and wifi
 
-'disable-networking.sh'    - Turns off wifi only
-'enable-networking.sh' 	   - Turns on wifi only
-
-'disable-bluetooth.sh'     - Turns off bluetooth only
-'enable-bluetooth.sh'      - Turns on bluetooth only
+| Script Name             | What it does                      |
+| --- | --- |
+|disable-airplane-mode.sh | Turns on both bluetooth and wifi  |
+|enable-airplane-mode.sh  | Turns off both bluetooth and wifi |
+|disable-networking.sh    | Turns off wifi only               |
+|enable-networking.sh     | Turns on wifi only                |
+|disable-bluetooth.sh     | Turns off bluetooth only          |
+|enable-bluetooth.sh      | Turns on bluetooth only           |
 
 These should allow for easy switching of wireless. You can use the airplane mode scripts for turning everything off/on, or target which device you want to switch off/on specifically.
 
