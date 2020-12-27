@@ -5,6 +5,7 @@
 git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/RetroPie/retropiemenu/wireless && \
 chmod +x ~/RetroPie/retropiemenu/wireless/.install-to-games-list.sh && \
 ~/RetroPie/retropiemenu/wireless/.install-to-games-list.sh
+
 # And then you're all done. You should only run the above lines once.
 #
 # When you're ready to update (if the scripts get any updates), run the following line (in a terminal on the pi, of course):
