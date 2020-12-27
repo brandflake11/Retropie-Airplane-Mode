@@ -17,6 +17,6 @@ git -C ~/RetroPie/retropiemenu/wireless pull
 mv ~/RetroPie/roms/ports/wireless ~/RetroPie/retropiemenu/wireless && git -C ~/RetroPie/retropiemenu/wireless pull
 
 # The above line will move the wireless folder and update it for you.
-# If you aren't sure what this last point is talking about and you haven't installed these scripts yet, don't worry about this last line.
+# If you aren't sure what this last point is talking about and haven't installed these scripts yet, don't worry about this last line.
 #
 # Remember to restart EmulationStation to see changes take effect. 
