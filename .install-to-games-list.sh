@@ -27,12 +27,12 @@ addtogamelist()
 <\/gameList>'/ {} \;
 }
 
-
-# Simple way to just get rid of the </gameList> line
-# We are not going to use this. We are going to replace the </gameList> line
-# and add our wireless script to it.
-# cat gamelist.xml | sed 's/<\/gameList>/'''/
-
+echowarning()
+{
+    echo "If you see a warning of find : No such file or directory"
+    echo "but you still have the icon for the wireless folder in the"
+    echo "retropie menu, then ignore the warning. The script worked!"
+}
 # You need GNU sed for the newlines to work. If you don't have GNU sed, you know
 # who you are ;).
 # Replace sed with the path to GNU sed if you changed to a different sed.
@@ -42,5 +42,6 @@ addtogamelist()
 #
 # There are currently two places I know that this file exists. It seems retropie is officially putting retropiemenu's gamelist.xml in ~/.emulationstation/gamelists/retropie now.
 # We are going to act on both potential places. It doesn't hurt anything if the file doesn't exist to run the function on it.
+echowarning
 addtogamelist ~/.emulationstation/gamelists/retropie/gamelist.xml
 addtogamelist ~/RetroPie/retropiemenu/gamelist.xml
