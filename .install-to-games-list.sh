@@ -15,6 +15,19 @@
     # You should have received a copy of the GNU General Public License
     # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+addtogamelist()
+{
+    find $1 -name "gamelist.xml" -execdir 
+    sed -i 's/<\/gameList>/        <game>\
+		<path>.\/wireless<\/path>\
+		<name>Wireless<\/name>\
+		<desc>Collection of scripts to enable\/disable wireless capabilities.<\/desc>\
+		<image>.\/wireless\/wireless-icon.png<\/image>\
+	<\/game>\
+<\/gameList>'/ {} \;
+}
+
+
 # Simple way to just get rid of the </gameList> line
 # We are not going to use this. We are going to replace the </gameList> line
 # and add our wireless script to it.
@@ -26,11 +39,11 @@
 #
 # This finds your </gameList> line and replaces it with the entry for the
 # wireless folder. Then it adds its own </gameList> line.
-sed -i 's/<\/gameList>/        <game>\
-		<path>.\/wireless<\/path>\
-		<name>Wireless<\/name>\
-		<desc>Collection of scripts to enable\/disable wireless capabilities.<\/desc>\
-		<image>.\/wireless\/wireless-icon.png<\/image>\
-	<\/game>\
-<\/gameList>'/ ~/RetroPie/retropiemenu/gamelist.xml
+#
+# There are currently two places I know that this file exists. It seems retropie is officially putting retropiemenu's gamelist.xml in ~/.emulationstation/gamelists/retropie now.
+# The first line acts on that one (~/.emulationstation/gamelists/retropie).
+# The second line acts on the gamelist.xml if it is in ~/RetroPie/retropiemenu
 
+addtogamelist ~/.emulationstation/gamelists/retropie/gamelist.xml
+
+addtogamelist ~/RetroPie/retropiemenu/gamelist.xml
