@@ -33,6 +33,7 @@ echowarning()
     echo "but you still have the icon for the wireless folder in the"
     echo "retropie menu, then ignore the warning. The script worked!"
 }
+
 # You need GNU sed for the newlines to work. If you don't have GNU sed, you know
 # who you are ;).
 # Replace sed with the path to GNU sed if you changed to a different sed.
