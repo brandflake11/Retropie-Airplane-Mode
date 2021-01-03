@@ -41,9 +41,6 @@ addtogamelist()
 # wireless folder. Then it adds its own </gameList> line.
 #
 # There are currently two places I know that this file exists. It seems retropie is officially putting retropiemenu's gamelist.xml in ~/.emulationstation/gamelists/retropie now.
-# The first line acts on that one (~/.emulationstation/gamelists/retropie).
-# The second line acts on the gamelist.xml if it is in ~/RetroPie/retropiemenu
-
+# We are going to act on both potential places. It doesn't hurt anything if the file doesn't exist to run the function on it.
 addtogamelist ~/.emulationstation/gamelists/retropie/gamelist.xml
-
 addtogamelist ~/RetroPie/retropiemenu/gamelist.xml
