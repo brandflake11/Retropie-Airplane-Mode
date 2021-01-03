@@ -17,7 +17,7 @@
 
 addtogamelist()
 {
-    find $1 -name "gamelist.xml" -execdir 
+    find $1 -name "gamelist.xml" -execdir \
     sed -i 's/<\/gameList>/        <game>\
 		<path>.\/wireless<\/path>\
 		<name>Wireless<\/name>\
