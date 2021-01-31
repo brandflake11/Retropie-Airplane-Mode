@@ -34,15 +34,14 @@ RAM_PIBOY_QUESTIONS() {
     echo "We have detected that you are using a Piboy DMG."
     # This question gets saved to $RAM_PIBOY_RESPONSE
     read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
-    if [ $RAM_PIBOY_RESPONSE = "y" || "Y" || "yes" ]
+    if [ $RAM_PIBOY_RESPONSE = "y" || "Y" || "yes" ];
     then
 	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
 	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
-    elif [ $RAM_PIBOY_RESPONSE = "n" || "N" || "no" ]
+    elif [ $RAM_PIBOY_RESPONSE = "n" || "N" || "no" ];
 	 echo "Not copying variable to your .bashrc."
-    fi
-	 
+    fi    
 	 echo "If at anytime you don't want RetroPie-Airplane-Mode to manage your osd, simply"
 	 echo "change this line in your .bashrc in your home directory from:"
 	 echo "export RAM_PIBOY_OSD=1"
@@ -53,20 +52,20 @@ RAM_PIBOY_QUESTIONS() {
 
 RAM_PIBOY_CHECK() {
     # Check if the osd is running
-    if [ -n $(RAM_IS_THIS_PIBOY) ]
+    if [ -n $(RAM_IS_THIS_PIBOY) ];
     then
 	RAM_PIBOY_QUESTIONS
     fi
 }
 
 ## Check to see if the old RetroPie-airplane-mode exists and move it/update it
-if [ -d $RAM_OLD_DIR ]
+if [ -d $RAM_OLD_DIR ];
    echo "Moving old install of RetroPie-Airplane-Mode to Settings"
    RAM_UPDATE_OLD_FILES
 fi
    
 ## Install logic. Only installs if installation is not found.
-if [ -d $RAM_DIR ]
+if [ -d $RAM_DIR ];
 then
     echo RetroPie-airplane-mode is already installed!
     break
@@ -79,7 +78,7 @@ fi
 RAM_PIBOY_CHECK
 
 ## Update Logic. Only updates if installation is found.
-if [ -d $RAM_DIR ]
+if [ -d $RAM_DIR ];
 then
     echo "Updating Retropie-Airplane-Mode scripts."
     RAM_UPDATE
