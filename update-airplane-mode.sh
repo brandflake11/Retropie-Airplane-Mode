@@ -42,6 +42,7 @@ RAM_PIBOY_QUESTIONS() {
     elif [ $RAM_PIBOY_RESPONSE = "n" || "N" || "no" ]
 	 echo "Not copying variable to your .bashrc."
     fi
+	 
 	 echo "If at anytime you don't want RetroPie-Airplane-Mode to manage your osd, simply"
 	 echo "change this line in your .bashrc in your home directory from:"
 	 echo "export RAM_PIBOY_OSD=1"
