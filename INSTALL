@@ -1,3 +1,12 @@
+## As of January 31, 2021, you no longer have to install manually. Just run the update-airplane-mode.sh script included in this git. To get the script and run it, you can run this command (copy the following lines in a terminal on the pi):
+wget "https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/update-airplane-mode.sh" && \
+chmod 744 update-airplane-mode.sh && \
+./update-airplane-mode.sh
+
+# And you should be all set. Everything should be installed to the appropriate places and visible to EmulationStation.
+
+## If you still would like to install manaually, then follow the instructions below:
+
 # If you don't know how to get to a terminal on Retropie, you can plug in a keyboard and press 'F4' when you get to the game select screen (this menu is called EmulationStation).
 # From there, you can type the line in. If you want to copy and paste, I recommend setting up ssh. Read about that here: 'https://retropie.org.uk/docs/SSH/'
 
