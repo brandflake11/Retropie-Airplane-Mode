@@ -36,12 +36,15 @@ RAM_PIBOY_QUESTIONS() {
     read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
     if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
     then
+	export RAM_PIBOY_OSD=1
 	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
 	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
+	echo
     elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
     then
 	echo "Not copying variable to your .bashrc."
+	echo
     else
 	echo "Error, not a valid response."
 	exit
