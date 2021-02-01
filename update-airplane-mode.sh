@@ -60,6 +60,7 @@ RAM_PIBOY_QUESTIONS() {
 	echo "to:"
 	echo "export RAM_PIBOY_OSD=0"
 	echo
+	echo "Make sure you reboot for the osd choice to take effect."
     fi	
 }
 
