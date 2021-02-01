@@ -53,7 +53,7 @@ RAM_PIBOY_QUESTIONS() {
 
 RAM_PIBOY_CHECK() {
     # Check if the osd is running
-    if [ -n $(RAM_IS_THIS_PIBOY) ]
+    if [ -n "$(RAM_IS_THIS_PIBOY)" ]
     then
 	RAM_PIBOY_QUESTIONS
     fi
@@ -70,7 +70,6 @@ fi
 if [ -d $RAM_DIR ]
 then
     echo RetroPie-airplane-mode is already installed!
-    break
 else
     echo RetroPie-airplane-mode not installed. Installing now...
     RAM_INSTALL
