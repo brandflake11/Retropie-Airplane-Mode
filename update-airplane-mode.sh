@@ -32,11 +32,25 @@ RAM_IS_THIS_PIBOY() {
 RAM_PIBOY_QUESTIONS() {
     # This will ask questions if the script detects you have a Piboy DMG and make the appropriate variables.
     echo "We have detected that you are using a Piboy DMG."
-    # This question gets saved to $RAM_PIBOY_RESPONSE
-    read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
-    if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
+    # Detect if this is already set. We don't need to ask this question every update.
+    # Skip all of this code if this variable is already set. If echoing the variable is empty
+    if [[ $(echo $RAM_PIBOY_OSD) -z ]]
     then
-	export RAM_PIBOY_OSD=1
+	# This question gets saved to $RAM_PIBOY_RESPONSE
+	read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
+	if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
+	then
+	    export RAM_PIBOY_OSD=1
+
+	elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
+	then
+	    export RAM_PIBOY_OSD=0
+	    echo "export RAM_PIBOY_OSD=0" >> ~/.bashrc
+	    echo
+	else
+	    echo "Error, not a valid response."
+	    exit
+	fi
 	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
 	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
@@ -48,14 +62,7 @@ RAM_PIBOY_QUESTIONS() {
 	echo "export RAM_PIBOY_OSD=0"
 	echo "or delete the line entirely."
 	echo
-    elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
-    then
-	echo "Not copying variable to your .bashrc."
-	echo
-    else
-	echo "Error, not a valid response."
-	exit
-    fi
+    fi	
 }
 
 RAM_PIBOY_CHECK() {
