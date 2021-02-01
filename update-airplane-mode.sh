@@ -34,7 +34,7 @@ RAM_PIBOY_QUESTIONS() {
     echo "We have detected that you are using a Piboy DMG."
     # Detect if this is already set. We don't need to ask this question every update.
     # Skip all of this code if this variable is already set. If echoing the variable is empty
-    if [[ $(echo $RAM_PIBOY_OSD) -z ]]
+    if [[ -z $(echo $RAM_PIBOY_OSD) ]]
     then
 	# This question gets saved to $RAM_PIBOY_RESPONSE
 	read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
