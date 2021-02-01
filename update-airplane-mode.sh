@@ -41,6 +41,7 @@ RAM_PIBOY_QUESTIONS() {
 	if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
 	then
 	    export RAM_PIBOY_OSD=1
+	    echo "export RAM_PIBOY_OSD=1" >> ~/.bashcr
 	    echo "Copying variable to bashrc to equal 1"
 	elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
 	then
