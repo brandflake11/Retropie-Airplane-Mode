@@ -31,7 +31,7 @@ RAM_IS_THIS_PIBOY() {
 
 RAM_PIBOY_QUESTIONS() {
     # This will ask questions if the script detects you have a Piboy DMG and make the appropriate variables.
-    echo "We have detected that you are using a Piboy DMG."
+    echo "Piboy DMG detected."
     # Detect if this is already set. We don't need to ask this question every update.
     # Skip all of this code if this variable is already set. If echoing the variable is empty
     if [[ -z $(echo $RAM_PIBOY_OSD) ]]
