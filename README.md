@@ -30,6 +30,7 @@ For easy installation instructions, look at the file INSTALL (https://github.com
 |enable-networking.sh     | Turns on wifi only                |
 |disable-bluetooth.sh     | Turns off bluetooth only          |
 |enable-bluetooth.sh      | Turns on bluetooth only           |
+|update-airplane-mode.sh  | Updates the RetroPie-Airplane-Mode scripts |
 
 These should allow for easy switching of wireless. You can use the airplane mode scripts for turning everything off/on, or target which device you want to switch off/on specifically.
 
