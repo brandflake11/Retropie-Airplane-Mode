@@ -61,6 +61,7 @@ RAM_PIBOY_CHECK() {
 
 ## Check to see if the old RetroPie-airplane-mode exists and move it/update it
 if [ -d $RAM_OLD_DIR ]
+then
    echo "Moving old install of RetroPie-Airplane-Mode to Settings"
    RAM_UPDATE_OLD_FILES
 fi
