@@ -34,7 +34,7 @@ RAM_PIBOY_QUESTIONS() {
     echo "We have detected that you are using a Piboy DMG."
     # This question gets saved to $RAM_PIBOY_RESPONSE
     read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
-    if [ "$RAM_PIBOY_RESPONSE" = "y" || "Y" || "yes" ]
+    if [ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]
     then
 	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
