@@ -9,7 +9,7 @@
 # RAM=Retropie-airplane-mode. It does not stand for random-access memory.
 
 RAM_DIR="/home/pi/RetroPie/retropiemenu/wireless"
-RAM_OLD_DIR="~/RetroPie/roms/ports/wireless"
+RAM_OLD_DIR="/home/pi/RetroPie/roms/ports/wireless"
 
 RAM_INSTALL() {
 git clone https://github.com/brandflake11/Retropie-Airplane-Mode.git ~/RetroPie/retropiemenu/wireless
