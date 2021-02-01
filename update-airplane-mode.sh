@@ -34,14 +34,17 @@ RAM_PIBOY_QUESTIONS() {
     echo "We have detected that you are using a Piboy DMG."
     # This question gets saved to $RAM_PIBOY_RESPONSE
     read -p "Do you want the RetroPie-Airplane-Mode scripts to manage your osd icons? [y]es, [n]o: " RAM_PIBOY_RESPONSE
-    if [ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]
+    if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
     then
 	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
 	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
-    elif [ $RAM_PIBOY_RESPONSE = "n" || "N" || "no" ]
+    elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
     then
-	 echo "Not copying variable to your .bashrc."
+	echo "Not copying variable to your .bashrc."
+    else
+	echo "Error, not a valid response."
+	exit
     fi
 	 echo "If at anytime you don't want RetroPie-Airplane-Mode to manage your osd, simply"
 	 echo "change this line in your .bashrc in your home directory from:"
