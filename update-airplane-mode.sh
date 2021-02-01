@@ -41,6 +41,13 @@ RAM_PIBOY_QUESTIONS() {
 	echo "If you don't know what this means, you have nothing to worry about."
 	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
 	echo
+	echo "If at any time you don't want RetroPie-Airplane-Mode to manage your osd, simply"
+	echo "change this line in your .bashrc in your home directory from:"
+	echo "export RAM_PIBOY_OSD=1"
+	echo "to:"
+	echo "export RAM_PIBOY_OSD=0"
+	echo "or delete the line entirely."
+	echo
     elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
     then
 	echo "Not copying variable to your .bashrc."
@@ -49,13 +56,6 @@ RAM_PIBOY_QUESTIONS() {
 	echo "Error, not a valid response."
 	exit
     fi
-	 echo "If at anytime you don't want RetroPie-Airplane-Mode to manage your osd, simply"
-	 echo "change this line in your .bashrc in your home directory from:"
-	 echo "export RAM_PIBOY_OSD=1"
-	 echo "to:"
-	 echo "export RAM_PIBOY_OSD=0"
-	 echo "or delete the line entirely."
-	 echo
 }
 
 RAM_PIBOY_CHECK() {
