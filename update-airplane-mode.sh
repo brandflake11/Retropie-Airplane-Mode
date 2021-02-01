@@ -55,6 +55,7 @@ RAM_PIBOY_QUESTIONS() {
 	 echo "to:"
 	 echo "export RAM_PIBOY_OSD=0"
 	 echo "or delete the line entirely."
+	 echo
 }
 
 RAM_PIBOY_CHECK() {
