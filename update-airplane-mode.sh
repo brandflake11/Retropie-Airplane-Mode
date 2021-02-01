@@ -41,26 +41,24 @@ RAM_PIBOY_QUESTIONS() {
 	if [[ $RAM_PIBOY_RESPONSE == 'y' || $RAM_PIBOY_RESPONSE == 'Y' || $RAM_PIBOY_RESPONSE == "yes" ]]
 	then
 	    export RAM_PIBOY_OSD=1
-
+	    echo "Copying variable to bashrc to equal 1"
 	elif [[ $RAM_PIBOY_RESPONSE == "n" || $RAM_PIBOY_RESPONSE == "N" || $RAM_PIBOY_RESPONSE == "no" ]]
 	then
 	    export RAM_PIBOY_OSD=0
 	    echo "export RAM_PIBOY_OSD=0" >> ~/.bashrc
+	    echo "Copying variable to bashrc to equal 0"
 	    echo
 	else
 	    echo "Error, not a valid response."
 	    exit
 	fi
-	echo "Copying variable to your .bashrc."
 	echo "If you don't know what this means, you have nothing to worry about."
-	echo "export RAM_PIBOY_OSD=1" >> ~/.bashrc
 	echo
 	echo "If at any time you don't want RetroPie-Airplane-Mode to manage your osd, simply"
 	echo "change this line in your .bashrc in your home directory from:"
 	echo "export RAM_PIBOY_OSD=1"
 	echo "to:"
 	echo "export RAM_PIBOY_OSD=0"
-	echo "or delete the line entirely."
 	echo
     fi	
 }
