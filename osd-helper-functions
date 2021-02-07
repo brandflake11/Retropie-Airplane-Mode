@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# This file contains the helper functions for managing the Piboy DMG osd.
+# It will be sourced in the other scripts to manage the osd
+
+# Set RAM_PIBOY_OSD based on .config file
+
+RAM_GET_OSD_VAR() {
+    cat ~/RetroPie/retropiemenu/wireless/.config | sed 's/\S*=//'
+}
+
+if [ -e ~/RetroPie/retropiemenu/wireless/.config ]
+then
+    RAM_PIBOY_OSD=$(RAM_GET_OSD_VAR)
+fi
+
+RAM_START_OSD() {
+    sudo /home/pi/osd/osd &
+}
+
+RAM_STOP_OSD() {
+    sudo pkill osd
+}
+
+RAM_RESTART_OSD() {
+    RAM_STOP_OSD
+    # Include renaming the video file here
+    RAM_START_OSD
+}
+
+RAM_OSD_PIC_DIR=~/osd/resources
+
+# Below is the logic for changing the osd
+# These should only work if the $RAM_PIBOY_OSD is 1
+RAM_OSD_WIFI_OFF() {
+    sudo sed -i 's/^wifi\s*$/#wifi/' /boot/osd.cfg
+    sudo unix2dos /boot/osd.cfg
+}
+
+RAM_OSD_WIFI_ON() {
+    sudo sed -i 's/^#wifi\s*$/wifi/' /boot/osd.cfg
+    sudo unix2dos /boot/osd.cfg
+}
+
+RAM_OSD_BLUETOOTH_OFF() {
+
+}
+
+RAM_OSD_BLUETOOTH_ON() {
+
+
+}
+
+RAM_OSD_BLUETOOTH_AIRPLANE() {
+
+
+}
+
+RAM_OSD_BLUETOOTH_NORMAL() {
+
+
+}
