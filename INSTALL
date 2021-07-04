@@ -1,5 +1,5 @@
 ## As of January 31, 2021, you no longer have to install manually. Just run the update-airplane-mode.sh script included in this git. To get the script and run it, you can run this command (copy the following lines in a terminal on the pi):
-wget "https://github.com/brandflake11/Retropie-Airplane-Mode/blob/main/update-airplane-mode.sh" && \
+wget "https://raw.githubusercontent.com/brandflake11/Retropie-Airplane-Mode/main/update-airplane-mode.sh" && \
 chmod 744 update-airplane-mode.sh && \
 ./update-airplane-mode.sh
 
